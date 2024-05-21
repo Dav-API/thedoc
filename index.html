@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <title>THEDOC | APP DAVAPI API</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="THEDOC | APP DAVAPI API" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="application-name" content="THEDOC | APP DAVAPI API" />
+  <meta name="apple-mobile-web-app-title" content="THEDOC | APP DAVAPI API" />
+  <meta name="theme-color" content="#303f9f" />
+  <meta name="msapplication-navbutton-color" content="#ffffff" />
+  <link rel="icon" type="image/png" sizes="144x144"
+    href="https://avatars.githubusercontent.com/u/119436086?s=144&v=4" />
+  <link rel="apple-touch-icon" type="image/png" sizes="144x144"
+    href="https://avatars.githubusercontent.com/u/119436086?s=144&v=4" />
+  <script type="text/javascript" src="https://rapidocweb.com/rapidoc-min.js"></script>
+
+</head>
+
+<body>
+
+
+  <script>
+
+    tokenapi_URL = "" + document.location;
+    tokenapi_From = tokenapi_URL.indexOf("?apis=");
+    tokenapi = tokenapi_URL.substring(tokenapi_From + 6, tokenapi_URL.length);
+
+
+    window.onload = function () {
+      if (!window.location.search) {
+        window.location = window.location + '?apis=https://dav-api.github.io/d-framework/api/v1/markup.yaml';
+      }
+    }
+
+    document.write('<rapi-doc id="thedoc" spec-url="'+tokenapi+'" show-header="false"><img slot="nav-logo" src="https://avatars.githubusercontent.com/u/119436086?s=500&v=4" />  <ul slot="nav-logo">  <a href="https://davidsonbpe.blogspot.com/" target="_blank"  style="display:flex; color: #fff; padding: 8px 10px; margin: 5px 0px; background-color: #f7981d;text-decoration: none;">DEVELOPER</a> <a href="https://github.com/dav-api" target="_blank"  style="display:flex; color: #fff; padding: 8px 10px; margin: 5px 0px; background-color: #f7981d;text-decoration: none;">APLICATIVO</a></ul></rapi-doc>');
+  </script>
+
+</body>
+
+</html>
